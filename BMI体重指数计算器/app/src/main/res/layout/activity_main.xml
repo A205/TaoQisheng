@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#00ff99"
+        android:id="@+id/textView" />
+
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="B.M.I"
+        android:textSize="30sp"
+        android:background="#000000"
+        android:textColor="#CCFFFF"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/imageView"
+        android:id="@+id/textView4"></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="体重指数计算器"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/shengao"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="身高"
+        android:gravity="center"
+        android:textSize="27sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp "
+        android:id="@+id/shuruh"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/shengao" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="cm"
+        android:id="@+id/hdw"
+        android:layout_toRightOf="@+id/shuruh"
+        android:layout_below="@+id/textView2"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/tizhong"
+        android:layout_below="@+id/shengao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="体重"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp "
+        android:id="@+id/shuruw"
+        android:layout_below="@+id/shengao"
+        android:layout_toRightOf="@+id/tizhong"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="kg"
+        android:id="@+id/wdw"
+        android:layout_toRightOf="@+id/shuruw"
+        android:layout_below="@+id/shengao"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计算BMI"
+        android:textSize="55sp"
+        android:layout_below="@+id/tizhong"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/btn"/>
+
+
+
+
+</RelativeLayout>
+
